@@ -1,0 +1,14 @@
+#!/bin/sh
+T=tmpl
+alias c=cat q=test e=echo
+rm -rf o;mkdir -p o
+q -e $T||e '`<$F`'>$T
+q -d st&&cp -r st o/
+x(){ eval "$(e 'c<<Z';c "$@";e;e Z)";}
+for F in c/*;do
+q -e "$F"&& (
+FN="${F##*/}"
+TT="$(head -n1 "$P")"
+BD="$(tail -n+2 "$P")"
+x $T>"o/$FN")
+done
