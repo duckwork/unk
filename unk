@@ -1,14 +1,14 @@
 #!/bin/sh
-T=tmpl
 alias c=cat q=test e=echo
+e UNK
 rm -rf o;mkdir -p o
-q -e $T||e '`<$F`'>$T
-q -d st&&cp -r st o/
+q -e tm||e '`<$F`'>tm
+q -d s&&cp -r s o/
 x(){ eval "$(e 'c<<Z';c "$@";e;e Z)";}
 for F in c/*;do
 q -e "$F"&& (
 FN="${F##*/}"
 TT="$(head -n1 "$P")"
 BD="$(tail -n+2 "$P")"
-x $T>"o/$FN")
+x tm>"o/$FN")
 done
