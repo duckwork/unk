@@ -9,20 +9,20 @@ that all fits with 1000 bytes.
 There are three main scripts:
 
 - **UNK**, a bash script that applies the template
-  to each page and publishes them to the output dir, and
+  to each page and publishes them to the output dir,
 - **LHT**, an awk script that serves as a (very) basic
-  markup language.
-- **TM**, the default template file for **UNK**.
+  markup language, and
+- **TM**, the default template script for **UNK**.
 
-Both scripts are 250 bytes each, for a total of 500 bytes.
-The default template file takes up the remaining 500 bytes
+**UNK** and **LHT** are 250 bytes each, for a total of 500 bytes.
+**TM** takes up the remaining 500 bytes
 of the target 1000 bytes.
 You are, of course, free to make the template file as large
 and involved as you like.
 
 # DETAILS
 
-## UNK
+## unk
 
 **UNK** takes a set of files in a directory, applies a template to them,
 and output them into another directory as HTML files ready for a server.
@@ -33,7 +33,6 @@ each input file is read as a `heredoc`, which enables
 shell interpolation.
 So the template, as opposed to the engine,
 can do all the heavy-lifting of index generation and navigation and such.
-That means all the
 
 Content goes into the following (hard-coded) directories:
 
@@ -43,7 +42,7 @@ Content goes into the following (hard-coded) directories:
           to a server.
 
 If there is no **TM** in the directory where **UNK** is run,
-one will be created that will simply echo the file being processed.
+one will be created that will simply `cat` the file being processed.
 
 The following variables are made available to **TM**:
 
@@ -69,7 +68,7 @@ in the script, but they can be used in templates):
 As mentioned above, templates can be nested.
 Simply call another template from **TM** with the **X** function.
 
-## LHT
+## lht
 
 **LHT** stands for *Less HyperText*,
 because that's what you're writing when you're writing it
@@ -81,7 +80,7 @@ It also has support for three inline spans:
 
 - `*em*` or `_em_` as *em*
 - `**strong**` or `__strong__` as **strong**
-- `\`code\`` as `code`.
+- `` `code` `` as `code`.
 
 Everything else is just HTML.
 
@@ -119,7 +118,8 @@ So I just wrote the Really Important Parts: `<p>` and some inlines.
 
 # LEGAL
 
-Copyright &copy; 2019 Case Duckworth <acdw@acdw.net>
+Copyright &copy; 2019 Case Duckworth &lt;<acdw@acdw.net>&gt;.
+
 This work is free.
 You can redistribute it and/or modify it under the terms of
 the Do What The Fuck You Want To Public License, Version 2,
