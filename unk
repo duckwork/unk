@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 alias c=cat q=test e=echo
 rm -rf O;mkdir -p O
 q -f TM||e '`<$F`'>TM

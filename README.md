@@ -9,7 +9,7 @@ that all fits within 1000 bytes.
 There are three main scripts:
 
 <ul>
-    <li><strong>UNK</strong> (250 bytes), a bash script that applies
+    <li><strong>UNK</strong> (253 bytes), a bash script that applies
         the template to each page and publishes them to the output dir,</li>
     <li><strong>LHT</strong> (241 bytes), an awk script that serves as
         a (very) basic markup language, and</li>
