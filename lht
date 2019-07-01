@@ -2,4 +2,4 @@
 function s(t,i){while(match($0,t)){if(I[ni]==i)ni-=sub(t,"</"i">")
 else if(sub(t,"<"i">"))I[++ni]=i}}BEGIN{FS="\n"; RS="";ni=0}
 {s("[\\*_]{2}","strong");s("[\\*_]","em");s("`","code")
-$0=(match($0,/>$/))?$0:"<p>"$0"</p>";print}
+$0=(match($0,/^<.*>$/))?$0:"<p>"$0"</p>";print}
