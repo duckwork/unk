@@ -152,7 +152,7 @@ and some inlines.
 <h1>LEGAL</h1>
 
 Copyright &copy; 2019 Case Duckworth
-<a href="mailto:acdw@acdw.net">&lt;acdw@acdw.net&gt;</a>.
+&lt;<a href="mailto:acdw@acdw.net">acdw@acdw.net</a>&gt;.
 
 This work is free.
 You can redistribute it and/or modify it under the terms of
