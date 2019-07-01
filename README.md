@@ -9,19 +9,19 @@ that all fits with 1000 bytes.
 There are three main scripts:
 
 <ul>
-    <li><strong>UNK</strong>, a bash script that applies the template
-        to each page and publishes them to the output dir,</li>
-    <li><strong>LHT</strong>, an awk script that serves as a (very) basic
-        markup language, and</li>
-    <li><strong>TM</strong>,
+    <li><strong>UNK</strong> (250 bytes), a bash script that applies
+        the template to each page and publishes them to the output dir,</li>
+    <li><strong>LHT</strong> (241 bytes), an awk script that serves as
+        a (very) basic markup language, and</li>
+    <li><strong>TM</strong> (509 bytes),
         the default template script for <strong>UNK</strong>.</li>
 </ul>
 
-__UNK__ and __LHT__ are 250 bytes each, for a total of 500 bytes.
-__TM__ takes up the remaining 500 bytes
-of the target 1000 bytes.
 You are, of course, free to make the template file as large
-and involved as you like.
+and involved as you like, but it's pretty good already: it has a plain
+(based on <a href="https://jrl.ninja/etc/1/">this article</a>) default CSS,
+or will use `S/css.css`, and it automatically adds a list of posts to
+the index, or a *return* link to other pages.
 
 <h1>DETAILS</h1>
 
@@ -52,18 +52,14 @@ Content goes into the following (hard-coded) directories:
 If there is no __TM__ in the directory where __UNK__ is run,
 one will be created that will simply `cat` the file being processed.
 
-The following variables are made available to __TM__:
+The following variable is made available to __TM__:
 
 <ul>
     <li><strong>FN</strong>: the <em>FileName</em>
         (with directories removed) of the file being processed</li>
-    <li><strong>TT</strong>: the <em>TiTle</em>
-        (the first line) of the file</li>
-    <li><strong>BD</strong>: the <em>BoDy</em>
-        (the rest) of the file</li>
 </ul>
 
-as well as this function:
+as well as these functions:
 
 <ul>
     <li><strong>X</strong>, for <em>eXpand</em>:
@@ -73,6 +69,10 @@ as well as this function:
         (or if it nests templates, one of the nested ones)
         has a <code>ZZ</code> on a line by itself,
         due to its <code>heredoc</code> nature.</li>
+    <li><strong>T</strong>, for <em>Title</em>:
+        it'll return the first line of the current file.</li>
+    <li><strong>B</strong>, for <em>Body</em>:
+        it'll return all lines *but* the first of the current file.</li>
 </ul>
 
 and these aliases (though they're more an artefact of saving space
