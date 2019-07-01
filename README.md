@@ -20,7 +20,7 @@ There are three main scripts:
 You are, of course, free to make the template file as large
 and involved as you like, but it's pretty good already: it has a plain
 (based on <a href="https://jrl.ninja/etc/1/">this article</a>) default CSS,
-or will use `S/css.css`, and it automatically adds a list of posts to
+or will use `S/s.css`, and it automatically adds a list of posts to
 the index, or a *return* link to other pages.
 
 <h1>DETAILS</h1>
