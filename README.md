@@ -9,11 +9,11 @@ that all fits with 1000 bytes.
 There are three main scripts:
 
 <ul>
-    <li><strong>UNK</strong, a bash script that applies the template
+    <li><strong>UNK</strong>, a bash script that applies the template
         to each page and publishes them to the output dir,</li>
-    <li><strong>LHT</strong, an awk script that serves as a (very) basic
+    <li><strong>LHT</strong>, an awk script that serves as a (very) basic
         markup language, and</li>
-    <li><strong>TM</strong,
+    <li><strong>TM</strong>,
         the default template script for <strong>UNK</strong>.</li>
 </ul>
 
@@ -66,7 +66,7 @@ The following variables are made available to __TM__:
 as well as this function:
 
 <ul>
-    <li><strong>X</strong, for <em>eXpand</em>:
+    <li><strong>X</strong>, for <em>eXpand</em>:
         the <code>shab</code> stand-in.
         It is much simpler than <code>shab</code>,
         and will fail if the template
