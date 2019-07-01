@@ -109,11 +109,11 @@ It also has support for three inline spans:
 </ul>
 
 Everything else is just HTML.
-This means that a valid `.lht` file is *almost* a valid `.md` file,
+This means that a valid `.lh` file is *almost* a valid `.md` file,
 except where it nests HTML and Markdown
 (so it's not really, but you can run it through Markdown in a pinch
 and get the basic idea across.
-This file, for example, is both `index.lht` and `README.md`
+This file, for example, is both `index.lh` and `README.md`
 (they're just symlinked to each other),
 so it's got some weirdness to keep things compatible between Markdown and LHT.
 But if you're just writing for LHT, it can be much simpler.).
