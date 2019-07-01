@@ -103,7 +103,7 @@ It also has support for three inline spans:
         as <em>em</em></li>
     <li><code>&#95;&#95;strong&#95;&#95;</code>
         as <strong>strong</strong></li>
-    <li><code>&#96;code&#96; as <code>code</code></li>
+    <li><code>&#96;code&#96;</code> as <code>code</code></li>
 </ul>
 
 Everything else is just HTML.
