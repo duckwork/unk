@@ -3,11 +3,11 @@ alias c=cat q=test e=echo
 rm -rf O;mkdir -p O
 q -f TM||e '`<$F`'>TM
 q -d S&&cp -r S O/
-X(){ eval "$(e 'c<<Z';c "$@";e;e Z)";}
+X(){ eval "$(e 'c<<ZZ';c "$@";e;e ZZ)";}
 for F in I/*;do
 q -f "$F"&& (e $F
-N="${F##*/}"
-T="$(sed 1q "$F")"
-B="$(sed 1d "$F")"
-X TM>"O/${N%%.*}.html")
+N="${F#I/}"
+T(){ sed 1q "$F";}
+B(){ sed 1d "$F";}
+X TM>"O/${N%%.*}.htm")
 done
