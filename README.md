@@ -18,10 +18,27 @@ There are three main scripts:
 </ul>
 
 You are, of course, free to make the template file as large
-and involved as you like, but it's pretty good already: it has a plain
-(based on <a href="https://jrl.ninja/etc/1/">this article</a>) default CSS,
-or will use `S/s.css`, and it automatically adds a list of posts to
-the index, or a *return* link to other pages.
+and involved as you like, but it's pretty good already:
+
+<ul>
+    <li>it has a plain default CSS
+        (based on <a href="https://jrl.ninja/etc/1/">this article</a>),
+        or will use <code>S/s.css</code> if it exists</li>
+    <li>it automatically adds a list of posts to the index page,
+        or a <em.return</em> link to other pages</li>
+    <li>it cleans up the first line of the input file and makes it a
+        <code>&lt;title&gt;</code>, and a <code>&lt;h1&gt;</code>
+        in the generated HTML</li>
+</ul>
+
+<h1>INSTALLING &amp; RUNNING</h1>
+
+To install __UNK__, simply clone this repo and put it where you want it.
+The default __TM__ needs __LHT__ to be in the same directory as it,
+so keep that in mind.
+
+To run __UNK__, just `cd` into your cloned repo and run `./unk`.
+It's just a POSIX shell script.
 
 <h1>DETAILS</h1>
 
