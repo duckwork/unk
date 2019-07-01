@@ -55,7 +55,9 @@ one will be created that will simply `cat` the file being processed.
 The following variable is made available to __TM__:
 
 <ul>
-    <li><strong>FN</strong>: the <em>FileName</em>
+    <li><strong>F</strong>: the <em>File</em> name passed to
+        <strong>TM</strong></li>
+    <li><strong>N</strong>: the <em>fileName</em>
         (with directories removed) of the file being processed</li>
 </ul>
 
