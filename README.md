@@ -5,7 +5,7 @@
 __UNK__ is an experiment in minimalism.
 It is a templating static site generator
 with an included markup language
-that all fits with 1000 bytes.
+that all fits within 1000 bytes.
 There are three main scripts:
 
 <ul>
@@ -13,7 +13,7 @@ There are three main scripts:
         the template to each page and publishes them to the output dir,</li>
     <li><strong>LHT</strong> (241 bytes), an awk script that serves as
         a (very) basic markup language, and</li>
-    <li><strong>TM</strong> (509 bytes),
+    <li><strong>TM</strong> (502 bytes),
         the default template script for <strong>UNK</strong>.</li>
 </ul>
 
