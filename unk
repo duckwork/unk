@@ -1,14 +1,13 @@
 #!/bin/sh
 alias c=cat q=test e=echo
-e UNK
-rm -rf o;mkdir -p o
-q -e tm||e '`<$F`'>tm
-q -d s&&cp -r s o/
-x(){ eval "$(e 'c<<Z';c "$@";e;e Z)";}
-for F in c/*;do
-q -e "$F"&& (
+rm -rf O;mkdir -p O
+q -f TM||e '`<$F`'>TM
+q -d S&&cp -r S O/
+X(){ eval "$(e 'c<<ZZ';c "$@";e;e ZZ)";}
+for F in I/*;do
+q -f "$F"&& (e $F
 FN="${F##*/}"
-TT="$(head -n1 "$P")"
-BD="$(tail -n+2 "$P")"
-x tm>"o/$FN")
+TT="$(sed 1q "$F")"
+BD="$(sed 1d "$F")"
+X TM>"O/$FN";e OK)
 done
