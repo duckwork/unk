@@ -143,7 +143,7 @@ That script became __UNK__ in this repo.
 I was feeling pretty high on my horse after writing the tiny SSG,
 so I thought,
 <em><a href="https://writing.exchange/@acdw/102339290120562386">maybe
-I could try for a tootable Markdown converter next</a></em>
+I could try for a tootable Markdown converter next</a></em> &mdash;
 boy, was I wrong about that.
 Markdown is *way* too complicated to fit in 500 bytes.
 So I just wrote the Really Important Parts: <code>&lt;p&gt;</code>
