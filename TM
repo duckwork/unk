@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <meta charset=utf-8>
 <title>$(T|sed 's/<[^>]\+>//g')</title>
-$(q -d S &&
-e '<link rel=stylesheet href=S/css.css>' ||
-e '<style>
-body{max-width:70ch;padding:2ch;margin:auto;font:18px/1.4 serif;} </style>')
-
+$(q -d S/s.css&&e '<link rel=stylesheet href=S/s.css>'||
+e '<style>body{max-width:70ch;padding:1em;margin:auto}
+#toc{background:pink;padding:1em}</style>')
 <h1>$(T)</h1>
 $(B|./lht)
-
-$(q "${N%%.*}" = index&&(
-e '<ul id=toc>'
-for p in I/*;do q "$p" = "$F"&&continue;
-n="${p#I/}";n="${n%%.*}.htm"
-e "<li><a href=\"$n\">$(sed 1q $p)</a></li>"
+$(q "${N%.*}" = index&&(e '<ul id=toc>'
+for p in I/*;do q "$p" = "$F"&&continue;n="${p#I/}"
+e "<li><a href='${n%.*}.htm'>$(sed 1q $p)</a></li>"
 done
 e '</ul>')||(e '<a id=toc href=index.htm>return</a>'))
 <footer>&copy; 2019 Case Duckworth</footer>
