@@ -33,6 +33,9 @@ and involved as you like, but it's pretty good already:
 
 <h1>INSTALLING &amp; RUNNING</h1>
 
+<a href="https://git.sr.ht/~acdw/unk"><strong>OFFICIAL REPO</strong></a> //
+<a href="https://github.com/duckwork/unk"><strong>GITHUB MIRROR</strong></a>
+
 To install __UNK__, simply clone this repo and put it where you want it.
 The default __TM__ needs __LHT__ to be in the same directory as it,
 so keep that in mind.
