@@ -196,3 +196,12 @@ but realized that
         The WTFPL, by contrast, is a trim 443 characters,
         which is right in keeping with the smallness of this project.</li>
 </ol>
+
+<h1>CONTRIBUTING</h1>
+
+To contribute to this project,
+head over to <a href="https://github.com/duckwork/unk">its GitHub mirror</a>
+and send me a pull request or issue.
+One of these days, I'm sure I'll figure out sr.ht's mailing lists,
+<img src="S/not-this-day.gif" style="display:block;margin:1em auto;"
+     alt="Meme of Aragorn saying, 'But it is not this day'" />
